@@ -1,0 +1,4 @@
+#Wed Sep 25 20:51:50 CST 2019
+base.0=D\:\\NewDemo\\ScrollViewContainer\\build\\intermediates\\dex\\release\\mergeDexRelease\\out
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,0 +1,179 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    tools:context=".user.fragment.UserFragment">
+
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="220dp"
+                android:background="#f00">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/information_background" />
+
+                <ImageButton
+                    android:id="@+id/ib_user_icon_avator"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/logininfo" />
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="160dp"
+                    android:text="未登录"
+                    android:textColor="#fff" />
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+            <TextView
+
+                android:id="@+id/tv_user_collect"
+                android:height="80dp"
+                style="@style/TextStyle"
+                android:gravity="left|center_vertical"
+                android:layout_width="match_parent"
+                android:drawableLeft="@drawable/user_channel_icon_collect"
+                android:text="我的收藏" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:background="#eee" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:background="#eee" />
+
+
+
+
+
+
+
+
+
+            <TextView
+                android:id="@+id/tv_user_invitation"
+                android:height="80dp"
+                android:gravity="left|center_vertical"
+                android:layout_width="match_parent"
+                style="@style/TextStyle"
+                android:drawableLeft="@drawable/user_channel_icon_invitation"
+                android:text="邀请分享" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:background="#eee" />
+
+            <TextView
+                android:id="@+id/tv_user_callcenter"
+                android:height="80dp"
+                android:gravity="left|center_vertical"
+                android:layout_width="match_parent"
+                style="@style/TextStyle"
+                android:drawableLeft="@drawable/user_channel_icon_callcenter"
+                android:text="客服中心" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+
+                android:background="#eee" />
+
+            <TextView
+                android:id="@+id/tv_user_feedback"
+                android:height="80dp"
+                android:gravity="left|center_vertical"
+                android:layout_width="match_parent"
+                style="@style/TextStyle"
+                android:drawableLeft="@drawable/user_channel_icon_feedback"
+                android:text="服务反馈" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_alignParentStart="true"
+            />
+
+            <com.xuexiang.xui.widget.button.RippleView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:rv_type="simpleRipple">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="?attr/xui_config_content_spacing_horizontal"
+                    android:layout_marginEnd="?attr/xui_config_content_spacing_horizontal"
+                    android:background="@color/app_color_theme_1"
+                    android:gravity="center"
+                    android:text="登出"
+                    android:textColor="@color/xui_config_color_white"
+                    android:textSize="20sp" />
+
+            </com.xuexiang.xui.widget.button.RippleView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tv_usercenter"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#fe3f3f"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="个人中心"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>
